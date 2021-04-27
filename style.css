@@ -10,6 +10,7 @@ body {
   background: var(--body--bg);
   margin: 0;
   padding: 0;
+  
 }
 header {
   position: fixed;
@@ -96,7 +97,7 @@ header {
 
 label #sidebar_btn {
   z-index: 1;
-  color: #fff;
+  color: rgb(46, 12, 95);
   position: fixed;
   cursor: pointer;
   left: 300px;
