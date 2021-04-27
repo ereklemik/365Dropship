@@ -6,6 +6,7 @@ const call = async (url) => {
   return result;
 };
 
+
 export const products = async (sort = null) => {
   return await call(`products${sort ? `?sort=${sort}` : ""}`);
 };
