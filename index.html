@@ -11,18 +11,23 @@
   </head>
   <body>
     <main class="main">
-        <nav class="nav">
-            <div class="nav__sort">
-                <select id="sort">
-                    <option value="asc">Asceding</option>
-                    <option value="desc">Desceding</option>
-                </select>
-            </div>
-        </nav>
-      <section class="catalog">
-
-      </section>
+      <nav class="nav">
+        <div class="nav__sort">
+          <select id="sort">
+            <option value="asc">Asceding</option>
+            <option value="desc">Dessceding</option>
+          </select>
+        </div>
+        <div class="nav__search">
+          <input type="text" class="search__btn" placeholder="Search" />
+          <a class="search">
+            <i class="far fa-search"></i>
+          </a>
+        </div>
+      </nav>
+      <section class="catalog"></section>
     </main>
+
     <script src="./assets/js/Catalog.js" type="module"></script>
   </body>
 </html>
