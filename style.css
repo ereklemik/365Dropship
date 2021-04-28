@@ -10,8 +10,8 @@ body {
   background: var(--body--bg);
   margin: 0;
   padding: 0;
-  
 }
+
 header {
   position: fixed;
   background: #313856;
@@ -31,43 +31,25 @@ header {
 .left_area span {
   color: white;
 }
-
-.logout_btn {
-  padding: 5px;
-  background: #19b3d3;
-  text-decoration: none;
-  float: right;
-  margin-top: -30px;
-  margin-right: 40px;
-  border-radius: 2px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
-  transition: 0.5s;
-  transition-property: background;
-}
-
-.logout_btn:hover {
-  background: #0b87a6;
-}
-
 .sidebar {
   background: #fcfdff;
-  margin-top: 70px;
-  padding-top: 30px;
   position: fixed;
   left: 0;
-  width: 250px;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  width: 280px;
   height: 100%;
   transition: 0.5s;
   transition-property: left;
 }
 
 .sidebar .profile_image {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #61d5df;
   border-radius: 100px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .sidebar h4 {
@@ -93,6 +75,9 @@ header {
 
 .sidebar i {
   padding-right: 10px;
+}
+.sidebar a:hover {
+  color: #61d5df;
 }
 
 label #sidebar_btn {
@@ -152,21 +137,20 @@ label #sidebar_btn:hover {
 .catalog {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 
 .catalog__product {
   margin-top: 75px;
   flex: 1 282px;
-  max-width: 275px;
-  height: 282px;
+  max-width: 282px;
+  height: 256px;
   background: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 8px;
   border: 2px solid var(--border--bg);
-  /* box-sizing:border-box; */
   cursor: pointer;
 }
 

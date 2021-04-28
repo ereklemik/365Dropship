@@ -13,8 +13,7 @@ const productGenerator = (product) => `
           <div class="catalog__price"">
           ${product.price}$
           </div>
-          </div>`
-;
+          </div>`;
 getProducts().then((allProducts) => {
   let productHTML = "";
   for (const product of allProducts) {
