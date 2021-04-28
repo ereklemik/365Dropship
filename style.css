@@ -31,21 +31,15 @@ header {
 .left_area span {
   color: white;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> c91923ccacc84e7822cca5c11cfa85f4394aecb9
 .sidebar {
   background: #fcfdff;
   position: fixed;
   left: 0;
   margin: 0;
   padding: 0;
-  overflow: auto;
   width: 280px;
   height: 100%;
-  transition: 0.5s;
-  transition-property: left;
+
 }
 
 .sidebar .profile_image {
@@ -69,8 +63,7 @@ header {
   line-height: 60px;
   text-decoration: none;
   padding-left: 40px;
-  box-sizing: border-box;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .sidebar a:hover {
@@ -141,14 +134,14 @@ label #sidebar_btn:hover {
 .catalog {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
 }
 
 .catalog__product {
   margin-top: 75px;
   flex: 1 282px;
   max-width: 282px;
-  height: 256px;
+  height: 296px;
   background: #ffffff;
   display: flex;
   flex-direction: column;
