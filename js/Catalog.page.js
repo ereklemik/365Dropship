@@ -3,11 +3,6 @@ import { getProducts } from "./API.js";
 export const generateProduct = (product) => `
 <div class="catalog__product">
 <div class="catalog__head">
-<label class="catalog__checkbox-container">
-    <input type="checkbox">
-    <span class="catalog__checksymbol"></span>
-</label>
-<button class="catalog__inventorybtn">add to inventory</button>
 </div>
 <div class="catalog__img">
     <img src ="${product.image}">
