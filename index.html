@@ -4,42 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-  
   </head>
     <title>365Dropship</title>
   </head>
   <body>
-    <div class="content">
-    <input type="checkbox" id="check">
-    <header>
-      <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-      </label>
-      <div class="left_area">
-        <h3>365 <span>DROPSHIP</span></h3>
-      </div>
-      
-    </header>
-    <div class="sidebar">
-      <center>
-        <img src="./assets/images/2020-10-04.jpg" class="profile_image" alt="">
-        <h4>Hi Erekle</h4>
-      </center>
-      <a href="#"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
-      <a href="#"><i class="fas fa-map"></i><span>Catalog</span></a>
-      <a href="#"><i class="fas fa-cube"></i><span>Inventory</span></a>
-      <a href="#"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
-      <a href="#"><i class="fas fa-clipboard-check"></i><span>Orders</span></a>
-      <a href="#"><i class="fas fa-arrows-alt-h"></i><span>Transactions</span></a>
-      <a href="#"><i class="fas fa-tasks"></i><span>Stores list</span></a>
+  <div class="content">
+
+    <div class="header">
+        <div class="header__content">
+            <button class="header__selectAll">Select all</button>
+            <span class="header__selection">selected 0 out of 274,157 products</span>
+        </div>
+        <div class="header__content">
+            <input id="search" class="search__input" type="text" placeholder="Search" />
+            <button id="search__button" class="header__searchbtn" type="submit">
+                <i class="fas fa-search fa-rotate-90"></i>
+            </button>
+            <button class="header__selectAll header__inventorybtn">add to inventory</button>
+            <i class="far fa-question-circle header__questionmark"></i>
+        </div>
     </div>
-      <section class="catalog"></section>
+
+    <div class="sort-section">
+        <select id="sort">
+            <option>Sort By: New Arrivals</option>
+            <option value="asc">Price: High To Low</option>
+            <option value="desc">Price: Low To Low</option>
+        </select>
+    </div>
+    <div class="catalog">
+    </div>
+</div>
+      <section class="catalog"> 
+      </section> 
     </main>
-  </div>
-
-
-    <script src="./assets/js/Catalog.page.js" type="module"></script>
+  </main>
+    <script src="./js/Catalog.page.js" type="module"></script>
   </body>
 </html>
+  
