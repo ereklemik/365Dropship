@@ -1,19 +1,19 @@
 import { getProducts } from "./API.js";
 
 export const generateProduct = (product) => `
-<div class="catalog__product">
-<div class="catalog__head">
-</div>
-<div class="catalog__img">
-    <img src ="${product.image}">
-</div>
-<div class="catalog__title">
-${product.title}
-</div>
-<div class="catalog__prices">
-    ${product.price}$
-</div>
-</div>
+            <div class="catalog__product">
+            <div class="catalog__head">
+            </div>
+            <div class="catalog__img">
+                <img src ="${product.image}">
+            </div>
+            <div class="catalog__title">
+            ${product.title}
+            </div>
+            <div class="catalog__prices">
+                ${product.price}$
+            </div>
+            </div>
 `;
 
 const generateProductList = (allProducts) => {
@@ -40,12 +40,14 @@ const fillUpCatalog = async (sort) => {
     catalog.innerHTML = generateProductList(products);
   }
 };
+
 fillUpCatalog();
 
 const sort = document.getElementById("sort");
 sort.addEventListener("change", () => {
   fillUpCatalog(sort.value);
 });
+
 
 const searchQuery = document.getElementById("search");
 const searchButton = document.getElementById("search__button");
